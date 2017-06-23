@@ -1,6 +1,7 @@
 .b-call {
 	display: inline-block;
 	font-family: $serif;
+	font-style: italic;
 	// float: left;
 
 	@include breakpoint (medium down) {
@@ -50,6 +51,7 @@
 		.b-call__copy {
 			color: $black;
 			font-family: $serif;
+			font-style: italic;
 			font-size: 14px;
 			text-align: right;
 			line-height: 1.3;
