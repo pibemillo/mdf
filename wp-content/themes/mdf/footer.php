@@ -18,6 +18,9 @@
 			<div class="row b-vpad-lg">
 				<div class="small-12 medium-10 large-9 medium-centered columns">
 					<h2 class="b-header-line--white">Get in Touch</h2>
+					<div class="b-call b-call--footer">
+						<p class="b-call__copy">Call Now To Book Your FREE Personal Training Session <a class="b-call__link" href="tel:424-291-2156"><i class="fa fa-mobile"></i> 424-291-2156</a></p>
+					</div>
 					<div id="form" class="row">			
 						<?php echo do_shortcode('[contact-form-7 id="1138" title="Contact"]');?>
 					</div>

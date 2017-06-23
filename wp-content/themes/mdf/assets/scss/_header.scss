@@ -112,3 +112,96 @@
 		display: none;
 	}
 }
+
+
+.b-call {
+	display: inline-block;
+	font-family: $serif;
+	// float: left;
+
+	@include breakpoint (medium down) {
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+}
+
+.b-call__copy {
+	margin-bottom: 0;
+	font-size: 14px;
+	
+	@include breakpoint (medium down) {
+		font-size: 1.25rem;
+		color: $white;		
+	}
+
+}
+
+.b-call__link {
+	font-family: $sans-alt;
+	margin-left: 5px;
+	white-space: nowrap;
+	// font-weight: bold;
+
+	@include breakpoint (medium down) {
+		color: $white;
+	}
+
+}
+
+
+.b-call--tablet {
+	
+	display: none;
+
+	@include breakpoint (medium only) {
+		display: inline-block;
+		width: 250px;
+		float: right;
+		margin-right: 15px;
+		position: relative;
+		top: 12px;
+
+		.b-call__copy {
+			color: $black;
+			font-family: $serif;
+			font-size: 14px;
+			text-align: right;
+			line-height: 1.3;
+		}
+		
+		.b-call__link {
+			color: $blue;
+		}
+
+	}
+	
+	@include breakpoint (small only) {		
+		display: block;
+		background: $blue;
+		width: 100%;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		z-index: 9;
+		text-align: center;
+
+		.b-call__copy {
+			font-size: 14px;
+		}
+
+	}
+
+}
+
+.b-call--footer {
+	display: block;
+	margin-bottom: 25px;
+
+	.b-call__copy {
+		font-size: 18px;
+		text-align: center;
+	}
+
+}

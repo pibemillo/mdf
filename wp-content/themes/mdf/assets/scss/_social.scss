@@ -6,10 +6,13 @@
 .b-social--header {
 	padding-top: .125rem;
 	margin-bottom: 1rem;
-	
+	display: inline-block;
+
 	@include breakpoint (medium down) {
-		margin-left: 0;
-		text-align: right;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		text-align: center;
 		a {
 			color: $white;
 		}

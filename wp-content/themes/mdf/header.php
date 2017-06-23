@@ -37,8 +37,16 @@
 				<a class="b-header__hamburger">
 					<img src="<?php echo get_template_directory_uri();?>/assets/img/hamburger.svg" alt="Mobile Menu">
 				</a>
+				<!-- show for medium only CTA -->
+				<div class="b-call b-call--tablet">
+					<p class="b-call__copy">Call Now To Book Your FREE Personal Training Session <a class="b-call__link" href="tel:424-291-2156"><i class="fa fa-mobile"></i> 424-291-2156</a></p>
+				</div>
+				<!-- end show for medium only CTA -->
 			</div>
 			<div class="b-mobile-menu large-8 medium-6 columns">
+				<div class="b-call">
+					<p class="b-call__copy">Call Now To Book Your FREE Personal Training Session <a class="b-call__link" href="tel:424-291-2156"><i class="fa fa-mobile"></i> 424-291-2156</a></p>
+				</div>
 				<ul class="b-social--header">
 					<li class="b-social__profile">
 						<a href="https://www.facebook.com/michaeldenisfitness/" target="blank"><i class="fa fa-facebook-official"></i></a>
