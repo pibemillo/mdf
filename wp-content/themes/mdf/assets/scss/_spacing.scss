@@ -1,0 +1,10 @@
+.b-vpad-xl {
+	padding: 10rem 0;
+}
+
+.b-vpad-lg {
+	padding: 5rem 0;
+	+ .bvap-lg {
+		padding-bottom: 0;
+	}
+}

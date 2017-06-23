@@ -1,0 +1,20 @@
+.b-grey-bg {
+	background: $grey;
+}
+
+.b-half-gutters {
+	padding-right: .9375rem;
+	padding-left: .9375rem;	
+	max-width: 100%;
+	@include breakpoint(large up) {
+		width: 37.5rem;
+	}
+}
+
+.b-half-gutters--left {
+	margin-left: auto;
+}
+
+.b-half-gutters--right {
+	margin-right: auto;
+}

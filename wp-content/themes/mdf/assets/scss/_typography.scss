@@ -1,0 +1,41 @@
+.b-header-line {
+	font-family: $sans-alt;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.125rem;
+	margin-bottom: 1.5rem;
+	&:after {
+		content: '';
+		display: block;
+		width: 2.5rem; 
+		border-bottom: 1px solid $black;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1.25rem;
+		// position: relative;
+	}
+}
+
+.b-header-line--white {
+	@extend .b-header-line;
+	color: $white;
+	&:after {
+		border-bottom-color: $white;
+	}
+}
+
+.b-italic-lg {
+	font-family: $serif;
+	font-style: italic;
+	font-size: 1.75rem;
+	@include breakpoint (small only) {
+		font-size: 1.125rem;
+	}
+}
+
+.b-header-italic {
+	font-family: $serif;
+	font-size: 1.25rem;
+	text-align: center;
+	margin-bottom: .75rem;
+}

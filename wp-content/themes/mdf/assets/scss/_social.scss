@@ -1,0 +1,31 @@
+.b-social {
+	list-style: none;
+	margin: 0;
+}
+
+.b-social--header {
+	padding-top: .125rem;
+	margin-bottom: 1rem;
+	
+	@include breakpoint (medium down) {
+		margin-left: 0;
+		text-align: right;
+		a {
+			color: $white;
+		}
+	}
+
+}
+
+.b-social__profile {
+	display: inline-block;
+
+	&:not(:last-child) {
+		padding-right: .5rem;
+	}
+	
+}
+
+.b-social__link {
+	color: $white;
+}

@@ -1,0 +1,20 @@
+.b-footer {
+	background: $black url('../../assets/img/mdf-bike.jpg') top right;
+	background-size: cover;
+	color: $white;
+}
+
+.b-copyright {
+	background: $blue;
+	padding: .5rem 0;
+}
+
+.b-copyright__text {
+	margin: 0;
+	font-size: .875rem;
+	color: $white;
+}
+
+.b-footer__location {
+	margin-bottom: 0;
+}

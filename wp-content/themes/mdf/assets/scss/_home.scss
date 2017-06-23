@@ -1,0 +1,166 @@
+.b-home-hero {
+	background: url('../../assets/img/mdf-hero.jpg') top center;
+	background-size: cover;
+}
+
+.b-home-hero__txt {
+	color: white;
+	text-align: center;
+	margin: 0;
+	padding: 15rem 0;
+	font-size: 3rem;
+	font-weight: 700;
+	text-shadow: 2px 2px 5px rgba($black, .75);
+	@include breakpoint(medium) {
+		padding: 10rem 0;
+		font-size: 2rem;
+	}
+	@include breakpoint(small) {
+		padding: 5rem 0;
+		font-size: 1.5rem;
+	}
+}
+
+.b-headshot {
+	position: relative;	
+	padding: 5rem 0;
+	@include breakpoint(medium down) {
+		padding-top: 0;
+	}
+	&:before {
+		content: '';
+		@include breakpoint(large up) {
+			position: absolute;
+			width: 100%;
+			top: 0;		
+			// right: 0;
+			bottom: 0;
+			left: -100%;		
+			background: url('../../assets/img/headshot.jpg');
+			background-size: cover;
+			padding: 5rem 0;
+		}
+		@include breakpoint(medium down) {
+			position: relative;			
+			display: block;
+			background: url('../../assets/img/headshot.jpg') center center;
+			background-size: cover;
+			height: 400px;
+			margin-bottom: 5rem;
+			padding: 0;
+		}
+	}
+}
+
+.b-workout {
+	position: relative;
+	padding: 5rem 0;
+	@include breakpoint(medium down) {
+		padding-top: 0;
+	}
+	&:before {
+		content: '';		
+		@include breakpoint(large up) {
+			position: absolute;
+			width: 100%;
+			top: 0;					
+			bottom: 0;
+			right: -100%;		
+			background: url('../../assets/img/workout.jpg') center center;
+			background-size: cover;			
+		}
+		@include breakpoint(medium down) {
+			position: relative;			
+			display: block;
+			background: url('../../assets/img/workout.jpg');
+			background-size: cover;
+			height: 400px;
+			margin-bottom: 5rem;
+		}
+	}
+}
+
+
+
+.b-home-testimonial {
+	background: url('../../assets/img/mdf-coach.jpg');
+	background-position: center;
+	background-size: cover;
+	@include breakpoint (small) {
+		background-position: initial;
+	}
+}
+
+.b-testimonial {	
+	border: 0;	
+}
+
+.b-testimonial__quote {
+	font-family: $serif;
+	font-size: 2rem;
+	color: $white;
+	text-align: center;
+	margin-bottom: 2rem;
+	&:before {
+		content: "“";
+		display: block;
+		width: 100%;
+		font-size: 5rem;
+		line-height: 0; 
+		margin-bottom: 2rem;
+	}
+}
+
+.b-testimonial__cite {	
+	font-style: normal;
+	color: $white;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+.b-matrix {	
+	color: $white;
+	background-color: $blue;
+	@include breakpoint(medium up) {
+		padding: 10rem 0;
+		background: url('../../assets/img/mdf-gym.jpg') center center;
+		background-size: cover;		
+	}
+	// @include breakpoint(small down) {
+	&:before {			
+		// content: '';
+		@include breakpoint(small only) {
+			content: '';
+			background: url('../../assets/img/mdf-gym.jpg') center center;
+			background-size: cover;
+			height: 300px;
+			display: block;
+			max-width: 100%;
+		}
+	}
+	// }
+	// @media #{$small-only} { 
+	// 	padding: 2.5rem 0 7.5rem 0; 
+	// }
+	// @media #{$large-up} { 
+	// 	padding: 10rem 0;
+	// }
+}
+
+.b-matrix__box {
+	background: rgba($blue, .9);
+	padding: 2.5rem;
+	@include breakpoint(small only) {
+		// @include grid-column(12, auto); 
+		padding: 2.5rem 0;
+	}
+}
+
+.b-matrix-column {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.b-matrix-column__img {	
+	margin-bottom: 1rem;
+}
